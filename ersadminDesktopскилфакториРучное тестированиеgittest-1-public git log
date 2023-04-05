@@ -1,0 +1,68 @@
+[33mcommit dbdeba6af1fb1f0493601cecf8558274443ba999[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: c8fd73f 5174b8a
+Author: Jylia1994 <jyliasokolova@mail.ru>
+Date:   Wed Apr 5 15:49:33 2023 +0800
+
+    new
+
+[1mdiff --cc Practicum 13.8.19.py[m
+[1mindex 0000000,0000000..0aaeea9[m
+[1mnew file mode 100644[m
+[1m--- /dev/null[m
+[1m+++ b/Practicum 13.8.19.py[m
+[36m@@@ -1,0 -1,0 +1,25 @@@[m
+[32m++ticket = int(input())[m
+[32m++persons = 0[m
+[32m++cost = 0[m
+[32m++while ticket>=1:[m
+[32m++    age = int(input())[m
+[32m++    if age < 18:[m
+[32m++        print("Бесплатный билет!")[m
+[32m++        ticket = ticket - 1[m
+[32m++        persons +=1[m
+[32m++    elif age >= 18 and age <= 25:[m
+[32m++        cost = cost + 990[m
+[32m++        print("Билет стоит 990 рублей!")[m
+[32m++        ticket = ticket - 1[m
+[32m++        persons +=1[m
+[32m++    else:[m
+[32m++        cost = cost + 1390[m
+[32m++        print("Полная стоимость билета 1390 рублей")[m
+[32m++        ticket = ticket - 1[m
+[32m++        persons +=1[m
+[32m++if persons >= 3:[m
+[32m++    cost = cost * 0.9[m
+[32m++    print("Скидка 10%, поздравляем")[m
+[32m++else:[m
+[32m++    print("У вас нет скидки")[m
+[32m++print("Сумма к оплате", cost)[m
+[1mdiff --cc Prakrikum 12.7.3.txt[m
+[1mindex a110a70,ae4f640..6e0556c[m
+[1m--- a/Prakrikum 12.7.3.txt[m
+[1m+++ b/Prakrikum 12.7.3.txt[m
+[36m@@@ -1,8 -1,8 +1,18 @@@[m
+[31m -per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}[m
+[31m -money = int(input("Введите сумму вклада: "))[m
+[31m -deposit = [5600, 5900, 4280, 4000][m
+[31m -for key in per_cent:[m
+[31m -    deposit.append(per_cent[key] * money / 100)[m
+[31m -max_deposit = max(deposit)[m
+[31m -print(deposit)[m
+[32m++<<<<<<< HEAD[m
+[32m +per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}[m
+[32m +money = int(input("Введите сумму вклада: "))[m
+[32m +deposit = [5600, 5900, 4280, 4000][m
+[32m +for key in per_cent:[m
+[32m +    deposit.append(per_cent[key] * money / 100)[m
+[32m +max_deposit = max(deposit)[m
+[32m +print(deposit)[m
+[32m++=======[m
+[32m++per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}[m
+[32m++money = int(input("Введите сумму вклада: "))[m
+[32m++deposit = [5600, 5900, 4280, 4000][m
+[32m++for key in per_cent:[m
+[32m++    deposit.append(per_cent[key] * money / 100)[m
+[32m++max_deposit = max(deposit)[m
+[32m++print(deposit)[m
+[32m++>>>>>>> 5174b8a3f30ae8c51e62e6f44d83c1a116ec42e4[m
+  print("Максимальная сумма, которую вы можете заработать - " + str(max_deposit))[m
